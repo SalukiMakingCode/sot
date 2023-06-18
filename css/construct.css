@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+.construct {
+  background: url(../img/john-schnobrich-2FPjlAyMQTA-unsplash-blur.jpg) bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+}
+.construct .container h1 {
+  padding-top: 100px;
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+}
+.construct .container h2 {
+  margin-top: 10px;
+  font-size: 3.125rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 79px;
+}
+.construct .container .progress {
+  height: 23px;
+  width: 90%;
+}
+.construct .container .progress .progress-bar {
+  background: #0FCAD7;
+}
+.construct .container .preorder {
+  color: white;
+  text-align: center;
+  margin-top: 44px;
+  margin-bottom: 481px;
+  font-size: 1.125rem;
+}
+.construct .container .preorder p {
+  margin-bottom: 17px;
+}
+.construct .container .preorder .input-group {
+  width: 70%;
+}
+.construct .container .preorder .input-group input[type=email] {
+  padding: 8px 0;
+}
+.construct .container .preorder .input-group .half-pill-right {
+  border-radius: 45px 0 0 45px;
+}
+.construct .container .preorder .input-group .half-pill-left {
+  border-radius: 0 45px 45px 0;
+}
+.construct .container .preorder .input-group span {
+  background: #0FCAD7;
+  color: white;
+  border: 1px solid #0FCAD7;
+  padding: 0 35px;
+  cursor: pointer;
+}
+.construct .container footer {
+  padding-bottom: 12px;
+}
+.construct .container footer .social {
+  margin-bottom: 44px;
+}
+.construct .container footer .social .border-circle {
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.construct .container footer .social .border-circle a {
+  color: white;
+  font-size: 1rem;
+}
+.construct .container footer p {
+  text-align: center;
+  color: white;
+}
+.construct .container footer p a {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .construct {
+    background: url(../img/christopher-gower-m_HRfLhgABo-unsplash.png) top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100%;
+  }
+  .construct h1 {
+    font-size: 1.5rem;
+  }
+  .construct h2 {
+    font-size: 1.75rem;
+    margin-bottom: 64px;
+  }
+  .construct .preorder {
+    font-size: 0.75rem;
+    margin-bottom: 398px;
+  }
+}
+
+/*# sourceMappingURL=construct.css.map */

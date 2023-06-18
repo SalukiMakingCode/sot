@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche ta formation</title>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="../css/search-training.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+
+        <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="Logo de school of talents"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navbarToggler">
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Accueil</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Formations</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Inscriptions</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">témoignages</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Contact</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="btn-group my-2 my-lg-0">
+                <button class="btn btn-info my-2 mx-auto rounded-pill" type="button"> S'inscrire</button>
+                <button class="btn btn-outline-info my-2 mx-auto rounded-pill" type="button"> Se connecter</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="search-training">
+        <div class="container-fluid col-12 col-lg-8 col-xl-8 mx-auto">
+            <h2 class="text-center"> Catalogue des formations</h2>
+
+            <div class="input-group input-group-lg col-12 col-md-8 mx-auto">
+                <input type="search" class="form-control rounded-pill" placeholder="Rechercher" aria-label="Rechercher"
+                    aria-describedby="Rechercher">
+                <i class="fas fa-search"></i>
+            </div>
+
+
+            <button class="btn btn-primary col-12 col-md-4 btn-filter text-center">+ Filtrer</button>
+
+
+            <div class="row">
+                <div class="container-filter-and-all col-12 col-xl-3">
+                    <div class="filter col-12">
+                        <h3>Filtrer</h3>
+                        <div class="input-group input-group-lg col-12">
+                            <input type="search" class="form-control rounded-pill" placeholder="Rechercher"
+                                aria-label="Rechercher" aria-describedby="Rechercher">
+                        </div>
+                        <div class="input-group input-group-lg col-12">
+                            <input type="search" class="form-control rounded-pill" placeholder="Rechercher"
+                                aria-label="Rechercher" aria-describedby="Rechercher">
+                        </div>
+                    </div>
+
+                    <div class="all col-12">
+                        <h3>Tout</h3>
+                        <div class="category">
+                            <h4>Commerciaux</h4>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Lorem ipsum</a>
+                        </div>
+
+                        <div class="category">
+                            <h4>RH</h4>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Lorem ipsum</a>
+                        </div>
+
+                        <div class="category">
+                            <h4>Graphisme</h4>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Lorem ipsum</a>
+                        </div>
+
+                        <div class="category">
+                            <h4>Dev</h4>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Lorem ipsum</a>
+                        </div>
+
+                        <div class="category">
+                            <h4>SEO</h4>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Lorem ipsum</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-training col-12 col-xl-9">
+
+                    <div class="row">
+                        <div class="card col-12 col-md-6 col-lg-6 col-xl-12">
+                            <div class="card-body row col-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="img-and-badge col-12 col-md-12 col-lg-12 col-xl-4">
+                                    <img src="../img/formation2.png"
+                                        alt="Formation gratuite Initiation de gestion de projet ">
+                                    <span class="badge badge-pill badge-primary">Gratuit</span>
+                                </div>
+                                <div class="description col-12 col-md-12 col-lg-12 col-xl-7">
+                                    <p class="card-category">Commerciaux</p>
+                                    <p class="card-title">Initiation de gestion de projet</p>
+                                    <p class="card-skill-title">Compétences acquises</p>
+                                    <p class="card-skill">Management, product design , lorem ipsum</p>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <button class="btn btn-link">+ Détail programme</button>
+                                <div class="difficulty">
+                                    <ul class="list-unstyled d-flex align-items-end">
+                                        <li class="mr-1 ml-1"><img src="../img/difficulty-average.svg"
+                                                alt="Difficulté moyenne" /></li>
+                                        <li class="mr-1 ml-1">Intermédiaire</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-12 col-md-6 col-lg-6 col-xl-12">
+                            <div class="card-body row col-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="img-and-badge col-12 col-md-12 col-lg-12 col-xl-4">
+                                    <img class="col-12" src="../img/formation3.png"
+                                        alt="Nouvelle formation introduction à la programmation">
+                                    <span class="badge badge-pill badge-primary">Nouveauté</span>
+                                </div>
+                                <div class="description col-12 col-md-12 col-lg-12 col-xl-7">
+                                    <p class="card-category">Developer</p>
+                                    <p class="card-title">Introduction à la programmation</p>
+                                    <p class="card-skill-title">Compétences acquises</p>
+                                    <p class="card-skill">HTML, CSS, Symphony</p>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <button class="btn btn-link">+ Détail programme</button>
+                                <div class="difficulty">
+                                    <ul class="list-unstyled d-flex align-items-end">
+                                        <li class="mr-1 ml-1"><img src="../img/difficulty-hard.svg"
+                                                alt="Difficulté difficile" /></li>
+                                        <li class="mr-1 ml-1">Difficile</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-12 col-md-6 col-lg-6 col-xl-12">
+                            <div class="card-body row col-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="img-and-badge col-12 col-md-12 col-lg-12 col-xl-4">
+                                    <img class="col-12" src="../img/austin-distel-mpN7xjKQ_Ns-unsplash.png"
+                                        alt="Formation le digital learning">
+                                </div>
+                                <div class="description col-12 col-md-12 col-lg-12 col-xl-7 none-badge">
+                                    <p class="card-category">Commerciaux</p>
+                                    <p class="card-title">Le digital learning pour les responsables formations</p>
+                                    <p class="card-skill-title">Compétences acquises</p>
+                                    <p class="card-skill">HTML, CSS, Symphony</p>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                <button class="btn btn-link">+ Détail programme</button>
+                                <div class="difficulty">
+                                    <ul class="list-unstyled d-flex align-items-end">
+                                        <li class="mr-1 ml-1"><img src="../img/difficulty-hard.svg"
+                                                alt="Difficulté difficile" /></li>
+                                        <li class="mr-1 ml-1">Difficile</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="1920px" height="68px" viewBox="0 0 1920 68" enable-background="new 0 0 1920 68" xml:space="preserve">
+            <polygon fill="#0fcad7" points="1920,68.236 0,68.236 0,0.236 " />
+        </svg>
+
+        <div class="container">
+
+            <div class="logo-footer col-12 col-md-5 mx-auto">
+                <img src="../img/Groupe1.png" alt="Logo de School of talents">
+            </div>
+
+            <div class="menu-footer">
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">A propos</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="text-white" href="#">Qui nous sommes ?</a>
+                            </li>
+                            <li>
+                                <a class="text-white" href="#">Nos solutions</a>
+                            </li>
+                            <li>
+                                <a class="text-white" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Légal</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="text-white" href="#">CGV et politique de confidentialité</a>
+                            </li>
+                            <li>
+                                <a class="text-white" href="#">Mentions légales</a>
+                            </li>
+                            <li>
+                                <a class="text-white" href="#">Gestion des cookies</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="text-white" href="#">Aide</a>
+                            </li>
+                            <li>
+                                <a class="text-white" href="#">Nous téléphoner</a>
+                            </li>
+                            <li>
+                                <a class="text-white" href="#">Envoyer un mail</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-5 col-xl-4 offset-xl-1">
+                        <h5 class="font-weight-bold text-white text-uppercase mt-3 mb-4">inscris-toi a la newsletter
+                        </h5>
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Adresse mail..."
+                                    aria-label="Adresse mail">
+                                <div class="input-group-append">
+                                    <button class="btn" type="button">Valider</button>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="checkNewsletter">
+                                <label class="form-check-label" for="checkNewsletter">
+                                    En soumettant ce formulaire, j'accepte que les informations saisies soient
+                                    exploitées dans le cadre de l'inscription à la newsletter.
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr class="bg-white">
+
+            <div class="social">
+                <div class="row">
+
+                    <ul class="list-unstyled col-12 col-md-5 mx-auto d-flex justify-content-around">
+                        <li class="d-flex flex-column align-items-center">
+                            <a href="#" class="mx-1">
+                                <i class="fab fa-facebook-square text-dark"></i>
+                            </a>
+                            Facebook
+                        </li>
+                        <li class="d-flex flex-column align-items-center">
+                            <a href="#" class="mx-1">
+                                <i class="fas fa-envelope-square text-dark"></i>
+                            </a>
+                            Mail
+                        </li>
+                        <li class="d-flex flex-column align-items-center">
+                            <a href="#" class="mx-1">
+                                <i class="fab fa-linkedin text-dark"></i>
+                            </a>
+                            linkedin
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="footer-copyright text-center py-3 text-white">
+                <a class="text-white" href="#"> HommeDeMetier.Be</a>
+                | 2020 &copy; Tous droits réservés | BE 0896755397
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../js/searchTraining.js"></script>
+</body>
+
+</html>
